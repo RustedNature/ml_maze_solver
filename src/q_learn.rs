@@ -73,7 +73,7 @@ impl QLearning {
                     updated_q_value
                 ); */
                 if is_legal_move {
-                    player = player.move_direction(move_direction);
+                    player = player.move_to(move_direction);
                 }
                 //maze.print_maze_wit_player_position(&player);
                 //sleep(Duration::from_secs_f64(0.0));

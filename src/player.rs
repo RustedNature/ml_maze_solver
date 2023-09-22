@@ -81,7 +81,7 @@ impl Player {
         next_action
     }
 
-    pub fn move_direction(mut self, direction: MoveDirection) -> Player {
+    pub fn move_to(mut self, direction: MoveDirection) -> Player {
         let mut row_after_move: i32 = self.get_coordinate().get_row();
         let mut col_after_move: i32 = self.get_coordinate().get_col();
 
